@@ -45,7 +45,7 @@ export function CreateCounter({
   }
 
   return (
-    <Container>
+    <Container style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", padding: "20px" }}>
       <Button
         size="3"
         onClick={() => {

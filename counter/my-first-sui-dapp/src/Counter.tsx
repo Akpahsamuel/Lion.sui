@@ -68,10 +68,10 @@ export function Counter({ id }: { id: string }) {
     getCounterFields(data.data)?.owner === currentAccount?.address;
 
   return (
-    <>
+    <Flex direction="column" align="center" justify="center" gap="4" style={{ width: "100%", padding: "20px" }}>
       <Heading size="3">Counter {id}</Heading>
 
-      <Flex direction="column" gap="2">
+      <Flex direction="column" align="center" gap="2">
         <Text>Count: {getCounterFields(data.data)?.value}</Text>
         <Flex direction="row" gap="2">
           <Button
@@ -94,7 +94,7 @@ export function Counter({ id }: { id: string }) {
           ) : null}
         </Flex>
       </Flex>
-    </>
+    </Flex>
   );
 }
 function getCounterFields(data: SuiObjectData) {
